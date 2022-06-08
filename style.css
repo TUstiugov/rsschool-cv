@@ -1,0 +1,522 @@
+/* Null Style ===============================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* END Null Style ===========================================================*/
+
+/* Common Style =============================================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #6b6969;
+  background-color: #fefefe;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.inner-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex: 1 0 100%;
+}
+
+.title {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333368;
+}
+
+.title--white {
+  color: #fefefe;
+}
+
+.underline {
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 70px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #333368;
+}
+/* END Common Style =========================================================*/
+
+/* Header ===================================================================*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: #cccccc;
+  background-color: #000000;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__link {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #cccccc;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #fefefe;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu__link:hover {
+  color: #fefefe;
+}
+.menu__link:hover::after {
+  width: 100%;
+  left: 0;
+}
+/* END Header ===============================================================*/
+
+/* Left Side Style ==========================================================*/
+.left-side {
+  width: 400px;
+  padding: 50px 20px;
+  font-size: 18px;
+  color: #fefefe;
+  background-color: #333368;
+}
+
+.left-side__photo {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.left-side img {
+  width: 100%;
+}
+
+.left-side__name {
+  margin: 0 0 20px 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.left-side__position {
+  margin: 0 0 40px 0;
+  font-size: 30px;
+}
+
+.left-side__contacts {
+  margin: 0 0 40px 0;
+}
+
+.left-side__skills {
+  margin: 0 0 40px 0;
+}
+
+.contacts__item {
+  height: 30px;
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #333368;
+  background-color: #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contacts__item span {
+  color: #4e4eb3;
+}
+
+.contacts__item:hover {
+  background-color: #fefefe;
+}
+
+.contacts__item:first-child {
+  cursor: auto;
+}
+
+.contacts__item:first-child:hover {
+  background-color: #cccccc;
+}
+
+.contacts__link {
+  color: #333368;
+  font-weight: 700;
+}
+
+.skills__list {
+  padding: 0 25px;
+}
+
+.skills__item {
+  position: relative;
+  margin: 0 0 25px 0;
+}
+
+.skills__item::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #cccccc;
+}
+
+.skills__item::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #6b6969;
+}
+
+.skills__item--html-css::after {
+  width: 65%;
+}
+
+.skills__item--sass-scss::after {
+  width: 60%;
+}
+
+.skills__item--bem::after {
+  width: 40%;
+}
+
+.skills__item--js::after {
+  width: 35%;
+}
+
+.skills__item--git-github::after {
+  width: 50%;
+}
+
+.skills__item--vscode::after {
+  width: 50%;
+}
+
+.lang__list {
+  padding: 0 25px;
+}
+
+.lang__item {
+  margin: 0 0 10px 0;
+  list-style-type: disc;
+}
+/* END Left Side Style ======================================================*/
+
+/* Main Style ===============================================================*/
+.main {
+  width: 800px;
+  padding: 50px;
+}
+
+.main__objective {
+  margin: 0 0 50px 0;
+}
+
+.main__education {
+  margin: 0 0 50px 0;
+}
+
+.main__experience {
+  margin: 0 0 50px 0;
+}
+
+.main__example {
+  margin: 0 0 50px 0;
+}
+
+.flex-container-edu {
+  display: flex;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+}
+
+.flex-container-edu__years {
+  flex: 0 0 250px;
+}
+
+.flex-container-edu__school {
+  position: relative;
+}
+
+.flex-container-edu__school::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background-color: #dbdada;
+  border-radius: 50%;
+}
+
+.experience__title {
+  margin: 0 0 50px 0;
+}
+
+.flex-container-exp {
+  display: flex;
+}
+
+.flex-container-exp__logo {
+  flex: 0 0 250px;
+}
+
+.flex-container-exp__logo img {
+  width: 150px;
+}
+
+.organization__name {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.organization__years-position span {
+  position: relative;
+  padding: 0 40px 0 0;
+}
+
+.organization__years-position span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 2px;
+  height: 20px;
+  background-color: #6b6969;
+}
+
+.example__title {
+  margin: 0 0 40px 0;
+}
+
+.example code {
+  padding-left: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.portfolio__title {
+  margin: 0 0 50px 0;
+}
+
+.portfolio__flex-container {
+  display: flex;
+  width: 740px;
+  justify-content: space-between;
+  margin: 0 -20px;
+}
+
+.portfolio__flex-item {
+  flex: 0 1 33.33%;
+  margin: 0 20px;
+}
+
+.portfolio__card {
+  display: block;
+  text-align: center;
+  color: #6b6969;
+  border: 1px solid #6b6969;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.portfolio__image {
+  height: 120px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.portfolio__image img {
+  width: 100%;
+}
+
+.portfolio__description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.portfolio__card:hover {
+  border-color: #4e4eb3;
+  transform: scale(1.3);
+  color: #4e4eb3;
+}
+
+/* END Main Style ===========================================================*/
+
+/* Footer Style =============================================================*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #cccccc;
+  background-color: #000000;
+}
+
+.footer__rss {
+  display: block;
+  width: 100px;
+  padding: 5px;
+  background-color: #fefefe;
+  transition: 0.3s;
+}
+
+.footer__rss:hover {
+  transform: scale(1.3);
+}
+
+.footer__mygit {
+  position: relative;
+  color: #cccccc;
+  transition: 0.3s;
+}
+
+.footer__mygit::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fefefe;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.footer__mygit:hover {
+  color: #fefefe;
+}
+
+.footer__mygit:hover::after {
+  width: 100%;
+  left: 0;
+}
+/* END Footer Style =========================================================*/

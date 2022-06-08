@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <title>CV - Taras Ustiugov</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li>
+              <a href="#objective" class="menu__link">Objective</a>
+            </li>
+            <li>
+              <a href="#education" class="menu__link">Education</a>
+            </li>
+            <li>
+              <a href="#experience" class="menu__link">Work experience</a>
+            </li>
+            <li>
+              <a href="#example" class="menu__link">Example of code</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="menu__link">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <aside class="left-side">
+          <div class="left-side__photo">
+            <img src="./img/ava1.jpg" alt="My photo">
+          </div>
+
+          <h1 class="left-side__name">Taras Ustiugov</h1>
+          <h3 class="left-side__position">Frontend Developer</h3>
+
+          <div class="left-side__contacts contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p title="My birthday"><span>Date of birth:</span> April 18, 1985</p>
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:t.ustiugov@gmail.com" class="contacts__link" title="My e-mail"><span>E-mail:</span>
+                  t.ustiugov@gmail.com</a>
+              </li>
+              <li class="contacts__item">
+                <a href="https://discordapp.com/users/UTMarckus#5913/" class="contacts__link"
+                  title="My discord"><span>Discord:</span>
+                  UTMarckus#5913</a>
+              </li>
+              <li class="contacts__item">
+                <a href="https://tlgg.ru/@utmarckus" class="contacts__link" title="My telegram"><span>Telegram:</span>
+                  @utmarckus</a>
+              </li>
+              <li class="contacts__item">
+                <a href="skype:live:ustiugovtaras?chat" class="contacts__link" title="My skype"><span>Skype:</span>
+                  live:ustiugovtaras</a>
+              </li>
+              <li class="contacts__item">
+                <a href="https://www.linkedin.com/in/taras-ustiugov-21b47a21b/" class="contacts__link"
+                  title="My linkedIn"><span>LinkedIn:</span> taras-ustiugov-21b47a21b</a>
+              </li>
+            </ul>
+          </div>
+
+          <article class="left-side__skills skills">
+            <h2 class="skills__title title title--white">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item skills__item--html-css">HTML & CSS</li>
+              <li class="skills__item skills__item--sass-scss">SASS / SCSS</li>
+              <li class="skills__item skills__item--bem">BEM</li>
+              <li class="skills__item skills__item--js">JavaScript</li>
+              <li class="skills__item skills__item--git-github">Git / GitHub</li>
+              <li class="skills__item skills__item--vscode">VSCode</li>
+            </ul>
+          </article>
+
+          <article class="left-side__lang lang">
+            <h2 class="lang__title title title--white">Knowledge of Languages</h2>
+            <ul class="lang__list">
+              <li class="lang__item">Russian: native (bilingual)</li>
+              <li class="lang__item">Ukrainian: native (bilingual)</li>
+              <li class="lang__item">English: A2</li>
+            </ul>
+          </article>
+        </aside>
+
+        <main class="main">
+          <section class="main__objective objective">
+            <h2 class="objective__title title underline" id="objective">Objective</h2>
+            <p class="objective__text">
+              I consider to be a part of your team. My knowledge and skills give me an opportunity take Junior
+              JavaScript/Front-End Developer. I`m fast learner, initiative, dependable.
+            </p>
+          </section>
+
+          <section class="main__education education">
+            <h2 class="education__title title underline" id="education">Education</h2>
+            <div class="education__flex-container flex-container-edu">
+              <p class="flex-container-edu__years">2002 - 2004</p>
+              <p class="flex-container-edu__school">
+                Moscow State Social University, IT department
+              </p>
+            </div>
+            <div class="education__flex-container flex-container-edu">
+              <p class="flex-container-edu__years">07/05/2021 - present</p>
+              <p class="flex-container-edu__school">
+                "JavaScript/Front-end Course" in "The Rolling Scopes School"
+              </p>
+            </div>
+          </section>
+
+          <section class="main__experience experience">
+            <h2 class="experience__title title underline" id="experience">Work experience</h2>
+            <div class="experience__flex-container flex-container-exp">
+              <div class="flex-container-exp__logo">
+                <img src="./img/rs_school.svg" alt="Logo">
+              </div>
+              <div class="flex-container-exp__organization organization">
+                <h4 class="organization__name">The Rolling Scopes School</h4>
+                <h5 class="organization__years-position"><span>Student</span> July 2021 - present</h5>
+              </div>
+            </div>
+          </section>
+
+          <section class="main__example example">
+            <h2 class="example__title title underline" id="example">Example of code</h2>
+            <pre><code class="js">
+function squareDigits(num){
+  let arr = String(num).split('');
+  let res = '';
+
+  for (let i = 0; i &lt; arr.length; i++) {
+    arr[i] *= arr[i];
+    res += String(arr[i]);
+  }
+
+  return Number(res);  
+}
+            </code></pre>
+          </section>
+
+          <section class="main__portfolio portfolio">
+            <h2 class="portfolio__title title underline" id="portfolio">Portfolio</h2>
+            <div class="portfolio__flex-container">
+              <div class="portfolio__flex-item">
+                <a href="https://rolling-scopes-school.github.io/tustiugov-JSFEPRESCHOOL/js30-vertical-slider/"
+                  class="portfolio__card" target="_blank">
+                  <div class="portfolio__image">
+                    <img src="./img/Slider.png" alt="Slider">
+                  </div>
+                  <p class="portfolio__name">Slider</p>
+                  <p class="portfolio__description">HTML, CSS, JS, BEM</p>
+                </a>
+              </div>
+              <div class="portfolio__flex-item">
+                <a href="https://rolling-scopes-school.github.io/tustiugov-JSFEPRESCHOOL/portfolio/"
+                  class="portfolio__card" target="_blank">
+                  <div class="portfolio__image">
+                    <img src="./img/Portfolio.png" alt="Portfolio">
+                  </div>
+                  <p class="portfolio__name">Portfolio</p>
+                  <p class="portfolio__description">HTML, SCSS, BEM</p>
+                </a>
+              </div>
+              <div class="portfolio__flex-item">
+                <a href="https://rolling-scopes-school.github.io/tustiugov-JSFEPRESCHOOL/museum/"
+                  class="portfolio__card" target="_blank">
+                  <div class="portfolio__image">
+                    <img src="./img/Museum.png" alt="Museum">
+                  </div>
+                  <p class="portfolio__name">Museum</p>
+                  <p class="portfolio__description">HTML, SCSS, JS, BEM</p>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__copyright">
+          © 2022
+          <a href="https://github.com/TUstiugov" class="footer__mygit">T. Ustiugov</a>
+        </p>
+        <a href="https://rs.school/js/" class="footer__rss" target="_blank" title="RS School">
+          <img src="./img/rs_school.svg" alt="RSSchool">
+        </a>
+        <!--  -->
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
